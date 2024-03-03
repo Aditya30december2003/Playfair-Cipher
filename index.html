@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playfair Cryptanalysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div class="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-5 flex flex-col gap-5 bg-gradient-to-t from-rose-600 to-indigo-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-70 border border-gray-100 p-2 w-[90%] md:w-[60%] lg:w-[43%] mx-auto mt-10">
+    <h1 class="text-center text-white font-bold text-[1.3rem]">Playfair Cipher</h1>
+    <input class="font-bold text-white bg-transparent border-b-2 border-b-white p-2 text-[1rem] w-full outline-none" type="text" id="inputText" placeholder="text">
+    <input class="font-bold text-white bg-transparent border-b-2 border-b-white p-2 text-[1rem] w-full outline-none"type="text" id="keyword" placeholder="keyword">
+    <select class="text-center p-1 cursor-pointer rounded-sm mx-auto w-[70%] outline-none" id="operation">
+        <option value="encrypt">Encryption</option>
+        <option value="decrypt">Decryption</option>
+    </select>
+    <button class="border-2 bg-gray-100 rounded-sm mx-auto w-[70%]" onclick="calculate()">Calculate</button>
+    <br>
+    <input class="font-bold border-b-white text-white bg-transparent border-b-2 border-b-black p-2 text-[1rem] outline-none" type="text" id="outputText" placeholder="transformed text">
+    <br>
+    <div id="matrix" class="mx-auto text-white font-bold"></div>
+
+</div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
+</html>
